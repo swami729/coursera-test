@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>A sample page</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <heading><h1> Sample Web Page </h1></heading>
+        <figure>
+            <img src="keith-wong-761290-unsplash.jpg" width="720" height="280" alt="Golden Gate Bridge">
+            <figcaption style="font-size : 15px;"><i> New block Kid!</i></figcaption>
+        </figure><br>
+        <aside style="font-size : 15px;">
+            <p><a href="https://www.google.com" target="_blank">Swaminathan</a></p>
+            <p>Fri Apr 19 16:45:06</p>
+        </aside>
+        <br>
+        <section>
+            <h2>CONTENTS</h2>
+            <ol> 
+                <li><a href="#basics">Creating a Web Page</a></li>
+                <li><a href="#syntax">HTML Syntax</a></li>
+                <li><a href="#chars">Special Characters</a></li>
+                <li><a href="#convert">Converting Plain Text to HTML</a></li>
+                <li><a href="#effects">Effects</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#tables">Tables</a></li>
+                <li><a href="#install">Installing your Web Page on the Internet</a></li>
+                <li><a href="#more">Where to go from here</a></li>
+            </ol>
+    </section>
+    <hr>
+    <ol>
+    <article id="basics">
+            <h3><li> Creating a Web Page</li> </h3>
+        <p> This page was typed by hand. Anybody can do this, you don't need any special "web creation" tools or HTML editors, and the pages you make can be viewed from any browser. To see how this page was made, choose <b>View Source</b> (or View Page Source, or View Document Source) in your browser's menu. A simple web page like this one is just plain text with HTML commands (markup) mixed in. HTML commands themselves are plain text. </p>
+        <p> When you're just learning and want to experiment, you can do everything on your PC. Create a new directory ("folder") for your website, and then put the web-page files (HTML plus any pictures) in it. Use NotePad or other plain-text editor (not word processor) on your PC to create an <small>index.html</small> file, which you can view locally with your Web browser. (You can also use word processors such as Word or WordPad if you save in "plain text", "text", "text document", or "text document MS-DOS format".)
+        <a href="#install">Later</a> I'll explain how you can install your web site on the Internet.</p>
+        <section>
+            <i><p style="margin-left : 10px"> Example for Windows:</p></i>
+            <p style="margin-left: 20px"> Move your mouse cursor to the desktop. Right-click, choose <i>New</i>, then choose <i>Folder</i>, and a "New Folder" appears, with its name highlighted. Type "Web" to change the folder's name to Web (or anything else you want). Then <i>Start -> Run</i> and type "notepad" to start NotePad. Now you can create your first Web page. </p>
+        </section>
+    </article>
+
+    <hr>
+    <article id="syntax">
+        <h3><li>HTML Syntax</li></h3>
+        <p>Web pages are written in Hyper Text Markup Language (HTML). HTML has three special characters: &lt;, &amp;, &gt;. An HTML command is enclosed in &lt;...&gt;, for example &lt;p&gt;, which is a paragraph separator, or &lt;b&gt; ("begin bold") and &lt;/b&gt; ("end bold"). So the following HTML text:</p>
+        <p style="margin-left: 20px; font-size: 13px">This sentence contains &lt;b&gt;bold&lt;/b&gt; text.</p>
+        <p> produces:</p>
+        <p style="margin-left: 20px;">This sentence contains <b>bold</b> text.</p>
+        <p>A Web page starts with a series of HTML commands, and ends with a few more. The contents go in between:</p>
+
+        <code><pre>
+    &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+    &lt;title&gt;Sample Web Page&lt;/title&gt;
+    &lt;META http-equiv="Content-Type" content="text/html; charset=iso-8859-1"&gt;
+    &lt;/head&gt;
+    &lt;body bgcolor="#ffffff" text="#000000"&gt;
+            </pre></code>
+            <em>(Contents go here)</em>
+    <code><pre>
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </pre></code>
+    
+    <p>The first line (DOCTYPE) specifies which language the page uses; just copy this line<sup>1</sup>. The next line, <code>&lt;html&gt;</code>, starts the page, and is matched by the last line, <code>&lt;/html&gt;</code>, which closes the page. <code>&lt;head&gt;</code>, starts the heading, which contains a title to be displayed on the browser's title bar and a declaration of the character set (usually US-ASCII, ISO-8859-1, or UTF-8). <code>&lt;/head&gt;</code> closes the heading.</p>
+    </article>
+    </body>
+</html>
